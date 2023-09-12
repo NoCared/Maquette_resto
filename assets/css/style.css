@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'playfair';
+    src: url(../font/PlayfairDisplay-Regular.ttf);
+}
+
+img,input {
+    width: 100%;
+}
+
+hr {
+    width: 70%;
+}
+
+* {
+    font-family: 'playfair', serif;
+    font-stretch: expanded;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+#logo {
+    letter-spacing: .2rem;
+}
+
+
+header>nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    width: 100vw;
+    height: 7vh;
+    top: 0;
+
+    background: #fff;
+
+    box-shadow: 0px 10px 10px 0px rgba(140, 140, 140, 0.75);
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(140, 140, 140, 0.75);
+    -moz-box-shadow: 0px 10px 10px 0px rgba(140, 140, 140, 0.75);
+}
+
+/* header>nav>ul -> header ul : un espace permet de cibler tous les éléments enfants du premier élément */
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: .1rem;
+}
+
+/* header>nav>ul>li peut etre remplacé ici par header li si tous les li du header sont pareils */
+header li {
+    margin: 0 1vw;
+}
+
+/* La , me permet d'utiliser les memes propriétés sur plusieurs sélecteurs */
+#logo,
+header li {
+    padding: .6rem;
+}
+
+/* Image Header */
+
+#header_img {
+    background-image: url(../img/hamburger.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    height: 90vh;
+    margin-top: 7vh;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+h1 {
+    color: #60575A;
+    padding: 1rem;
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
+}
+
+
+
+
+/*  -------------------------- MAIN -----------------------------------------  */
+
+
+#about h2,
+#about h3 {
+    text-align: center;
+    letter-spacing: .3rem;
+}
+
+#about h2 {
+    font-weight: 600;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+}
+
+#about h3 {
+    font-weight: normal;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    font-size: 1.4rem;
+    margin: 2rem auto 1rem auto;
+}
+
+#about div:first-child,
+#menu div:first-child {
+    width: 48%;
+}
+
+/* #about div:nth-child(2) = #about div:last-child -> ici c'est la meme chose */
+/* ATTENTION : nth child commence à 1 */
+#about div:last-child,
+#menu div:last-child {
+    width: 48%;
+}
+
+#about span {
+    background-color: yellow;
+}
+
+#about p {
+    word-spacing: .3rem;
+    font-stretch: normal;
+    font-weight: 400;
+}
+
+
+#about p:last-child {
+    font-weight: normal;
+    color: grey;
+}
+
+
+
+
+/* MENU */
+
+/* On peut utiliser flex-direction : row-reverse pour "retourner" 
+les colonnes html si on a fait un copier coller */
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 2rem auto 1rem auto;
+
+}
+
+
+#menu h2 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    letter-spacing: .3rem;
+}
+
+#menu h3 {
+    letter-spacing: .2rem;
+    font-weight: 600;
+    margin-top: 4rem;
+}
+
+/* CONTACT */
+
+
+#contact {
+    width: 70%;
+    margin: 2rem auto 1rem auto;
+}
+#contact span {
+    color: cornflowerblue;
+}
+#contact input{
+    border: none;
+    border-bottom: .1px solid grey;
+    padding: .5rem;
+    margin: .5rem;
+}
+#contact #send{
+    border-bottom: none;
+    width: fit-content;
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+    height: 15vh;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    font-weight: bold;
+}
